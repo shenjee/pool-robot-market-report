@@ -1000,7 +1000,7 @@ const TechnicalChallenges = () => {
 const ProductComparison = () => {
   const [selectedBrands, setSelectedBrands] = useState(['Maytronics', 'Hayward', 'Zodiac', 'WYBOT']);
   
-  const toggleBrand = (brand) => {
+  const toggleBrand = (brand: string) => {
     if (selectedBrands.includes(brand)) {
       setSelectedBrands(selectedBrands.filter(b => b !== brand));
     } else {
